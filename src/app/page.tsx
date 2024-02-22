@@ -55,10 +55,10 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-background/75 items-center justify-self-auto ">
         <SiteHeader />
-        <div className="grid grid-cols-2 gap-4 md:w-2/3">
+        <div className="grid grid-cols-2 md:w-2/3 min-h-screen flex-1">
       {notificationData.map((item, index) => (
         <GridItem
-          key={index} // Don't forget to provide a unique key for each item
+          key={index}
           title={item.title}
           icon={item.icon}
           details={item.details}

@@ -1,6 +1,6 @@
 export const siteConfig = {
     name: "ptyNaTendani",
-    url: "https://ui.shadcn.com",
+    url: "https://ptynatendani.co.za",
     ogImage: "https://ui.shadcn.com/og.jpg",
     description:
       "Modern Way to find the best housing propoerty in your area",
