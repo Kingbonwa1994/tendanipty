@@ -8,19 +8,19 @@ interface DocsConfig {
 export const docsConfig: DocsConfig = {
   mainNav: [
     {
-      title: "Documentation",
+      title: "Housing Available",
       href: "/docs",
     },
     {
-      title: "Components",
+      title: "Property Development",
       href: "/docs/components/accordion",
     },
     {
-      title: "Themes",
+      title: "Property News",
       href: "/themes",
     },
     {
-      title: "Examples",
+      title: "International",
       href: "/examples",
     },
     {

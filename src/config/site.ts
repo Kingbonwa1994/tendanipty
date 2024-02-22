@@ -1,12 +1,17 @@
 export const siteConfig = {
-    name: "shadcn/ui",
+    name: "ptyNaTendani",
     url: "https://ui.shadcn.com",
     ogImage: "https://ui.shadcn.com/og.jpg",
     description:
-      "Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.",
+      "Modern Way to find the best housing propoerty in your area",
     links: {
-      twitter: "https://twitter.com/shadcn",
-      github: "https://github.com/shadcn-ui/ui",
+      twitter: "https://twitter.com/ptyNaTendani",
+      github: "https://github.com/Kingbonwa1994",
+      privacyPolicy: "/",
+      termsOfService: "/",
+      facebook: '/',
+      instagram: '/'
+
     },
   }
   
