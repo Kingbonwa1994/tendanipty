@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Button } from "./ui/button";
 interface GridItemProps {
     title: string;
-    icon: string;
+    icon: () => JSX.Element;
     details: string;
     buttonLabel?: string;
     onClick?: () => void;
@@ -12,13 +12,12 @@ interface GridItemProps {
   }
   
 
-export function GridItem({ title, icon, details, buttonLabel, onClick, className }: GridItemProps) {
+export function GridItem({ title,  details, buttonLabel, onClick, className }: GridItemProps) {
     return (
-      <div className="flex flex-col items-center rounded-2xl hover:bg-background/25 bg-primary dark:bg-primary-foreground space-x-4 py-2">
-        <div>
-        <Image src='/icon' width={50} height={50} alt="icon" />
-        </div>
-        <div className="text-center">{icon}</div>
+      <div className="flex mx-2 mt-4 hover:bg-background/10 justify-between shadow shadow-[] flex-col items-center rounded-2xl space-x-4 py-2">
+        <div className="items-center">
+              </div>
+        
         <div className="">
           <h3 className="text-sm text-center text-foreground font-medium">{title}</h3>
           <p className="text-sm text-muted dark:text-foreground ">{details}</p>

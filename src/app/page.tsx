@@ -1,66 +1,66 @@
 'use client'
 import { SiteHeader } from "@/components/site-header";
 import { GridItem } from "@/components/griditem";
+import { Icons } from "@/components/icons";
 
 const handleNotificationClick = () => {
   return true;
 }
 const notificationData = [
   {
-    title: "Notification Title 1",
-    // icon: <BellIcon1 />, // Assuming you have different BellIcons for each item
+    title: "Hunt",
+    icon: Icons.hunt, // Assuming you have different BellIcons for each item
     details: "Description for notification 1",
     buttonLabel: "View Details",
     onClick: () => handleNotificationClick(),
   },
   {
-    title: "Notification Title 2",
-    // icon: <BellIcon2 />,
+    title: "Sprint",
+    icon: Icons.sprint, // Assuming you have different BellIcons for each
     details: "Description for notification 2",
     buttonLabel: "View Details",
     onClick: () => handleNotificationClick(),
   },
   {
-    title: "Notification Title 1",
-    // icon: <BellIcon1 />, // Assuming you have different BellIcons for each item
+    title: "Resale",
+    icon: Icons.resale, // Assuming you have different BellIcons for each item
     details: "Description for notification 1",
     buttonLabel: "View Details",
     onClick: () => handleNotificationClick(),
   },
   {
-    title: "Notification Title 2",
-    // icon: <BellIcon2 />,
+    title: "Developers",
+    icon: Icons.dev,
     details: "Description for notification 2",
     buttonLabel: "View Details",
     onClick: () => handleNotificationClick(),
   },
   {
-    title: "Notification Title 1",
-    // icon: <BellIcon1 />, // Assuming you have different BellIcons for each item
+    title: "Just Curious",
+    icon: Icons.justcurious, // Assuming you have different BellIcons for each item
     details: "Description for notification 1",
     buttonLabel: "View Details",
     onClick: () => handleNotificationClick(),
   },
   {
-    title: "Notification Title 2",
-    // icon: <BellIcon2 />,
+    title: "FAQ",
+    icon: Icons.faq, //
     details: "Description for notification 2",
     buttonLabel: "View Details",
     onClick: () => handleNotificationClick(),
-  },
-  // ... Repeat this structure for the remaining items
+  }
 ];
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-background/75 items-center justify-self-auto ">
+    <main className="flex min-h-screen mb-3 flex-col bg-background/75 items-center justify-self-auto ">
         <SiteHeader />
         <div className="grid grid-cols-2 md:w-2/3 min-h-screen flex-1">
       {notificationData.map((item, index) => (
         <GridItem
           key={index}
           title={item.title}
-          icon={item.icon}
+          // icon={item.icon}
           details={item.details}
           buttonLabel={item.buttonLabel}
           onClick={item.onClick}

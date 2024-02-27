@@ -40,7 +40,7 @@ export const docsConfig: DocsConfig = {
   ],
   sidebarNav: [
     {
-      title: "Getting Started",
+      title: "Properties",
       items: [
         {
           title: "Introduction",

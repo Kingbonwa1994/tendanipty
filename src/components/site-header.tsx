@@ -6,7 +6,6 @@ import { CommandMenu } from "@/components/command-menu"
 import { Icons } from "@/components/icons"
 import { MainNav } from "@/components/main-nav"
 import { MobileNav } from "@/components/mobile-nav"
-import { ModeToggle } from "@/components/mode-toggle"
 import { buttonVariants } from "@/components/ui/button"
 
 export function SiteHeader() {
@@ -21,7 +20,7 @@ export function SiteHeader() {
           </div>
           <nav className="flex items-center">
             <Link
-              href={siteConfig.links.github}
+              href={siteConfig.links.facebook}
               target="_blank"
               rel="noreferrer"
             >
@@ -34,7 +33,7 @@ export function SiteHeader() {
                 )}
               >
                 <Icons.gitHub className="h-4 w-4" />
-                <span className="sr-only">GitHub</span>
+                <span className="sr-only">Facebook</span>
               </div>
             </Link>
             <Link
@@ -54,7 +53,7 @@ export function SiteHeader() {
                 <span className="sr-only">Twitter</span>
               </div>
             </Link>
-            <ModeToggle />
+          
           </nav>
         </div>
       </div>
