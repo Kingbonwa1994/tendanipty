@@ -3,16 +3,14 @@ import Image from "next/image";
 import { Button } from "./ui/button";
 interface GridItemProps {
     title: string;
-    icon: () => JSX.Element;
     details: string;
     buttonLabel?: string;
     onClick?: () => void;
-  
     className?: string;
   }
   
 
-export function GridItem({ title,  details, buttonLabel, onClick, className }: GridItemProps) {
+export function GridItem({ title, details, buttonLabel, onClick, className }: GridItemProps) {
     return (
       <div className="flex mx-2 mt-4 hover:bg-background/10 justify-between shadow shadow-[] flex-col items-center rounded-2xl space-x-4 py-2">
         <div className="items-center">

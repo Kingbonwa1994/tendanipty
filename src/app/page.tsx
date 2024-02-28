@@ -2,6 +2,7 @@
 import { SiteHeader } from "@/components/site-header";
 import { GridItem } from "@/components/griditem";
 import { Icons } from "@/components/icons";
+import React from "react";
 
 const handleNotificationClick = () => {
   return true;
@@ -53,14 +54,13 @@ const notificationData = [
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen mb-3 flex-col bg-background/75 items-center justify-self-auto ">
+    <main className="flex min-h-screen mb-3 flex-col bg-background items-center justify-self-auto ">
         <SiteHeader />
         <div className="grid grid-cols-2 md:w-2/3 min-h-screen flex-1">
       {notificationData.map((item, index) => (
         <GridItem
           key={index}
           title={item.title}
-          // icon={item.icon}
           details={item.details}
           buttonLabel={item.buttonLabel}
           onClick={item.onClick}
