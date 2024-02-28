@@ -1,4 +1,7 @@
-type IconProps = React.HTMLAttributes<SVGElement>
+export type IconProps = React.HTMLAttributes<SVGElement>& {
+  iconName: string;
+  // Add any other custom props you want to include
+};
 
 export const Icons = {
   logo: (props: IconProps) => (
@@ -129,12 +132,12 @@ export const Icons = {
   ),
   hunt: (props: IconProps) => (
     <svg
-      fill="#2a099f"
+      fill="#FFFFFF"
       version="1.1"
       id="Capa_1"
       xmlns="http://www.w3.org/2000/svg"
-      width="800px"
-      height="800px"
+      width="24px"
+      height="24px"
       viewBox="0 0 68.269 68.269"
       stroke="#2a099f"
       {...props}>
@@ -145,8 +148,8 @@ export const Icons = {
     </svg>
   ),
   sprint: (props: IconProps) => (
-    <svg fill="#2a099f" width="800px"
-      height="800px" viewBox="0 0 32 32" version="1.1"
+    <svg fill="#FFFFFF" width="24px"
+      height="24px" viewBox="0 0 32 32" version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
@@ -160,7 +163,7 @@ export const Icons = {
     </svg>
   ),
   resale: (props: IconProps) => (
-    <svg fill="#2a099f" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+    <svg fill="#FFFFFF" height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
 
       {...props}
     >
@@ -174,7 +177,8 @@ export const Icons = {
     </svg>
   ),
   faq: (props: IconProps) => (
-    <svg fill="#2a099f" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <svg fill="#FFFFFF" width="24px" height="24px" 
+    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
 
       <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
@@ -189,7 +193,7 @@ export const Icons = {
     </svg>
   ),
   justcurious: (props: IconProps) => (
-    <svg fill="#2a099f" height="800px" width="800px" version="1.1" id="Layer_1"
+    <svg fill="#FFFFFF" height="24px" width="24px" version="1.1" id="Layer_1"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512" {...props}>
 
@@ -202,7 +206,7 @@ export const Icons = {
     </svg>
   ),
   dev: (props: IconProps) => (
-    <svg fill="#2a099f" height="800px" width="800px" version="1.1" id="Layer_1"
+    <svg fill="#FFFFFF" height="24px" width="24px" version="1.1" id="Layer_1"
       xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
       {...props}>
 

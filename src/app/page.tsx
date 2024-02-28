@@ -9,42 +9,42 @@ const handleNotificationClick = () => {
 }
 const notificationData = [
   {
-    title: "Hunt",
+    title: "hunt",
     icon: Icons.hunt, // Assuming you have different BellIcons for each item
     details: "Description for notification 1",
     buttonLabel: "View Details",
     onClick: () => handleNotificationClick(),
   },
   {
-    title: "Sprint",
+    title: "sprint",
     icon: Icons.sprint, // Assuming you have different BellIcons for each
     details: "Description for notification 2",
     buttonLabel: "View Details",
     onClick: () => handleNotificationClick(),
   },
   {
-    title: "Resale",
+    title: "resale",
     icon: Icons.resale, // Assuming you have different BellIcons for each item
     details: "Description for notification 1",
     buttonLabel: "View Details",
     onClick: () => handleNotificationClick(),
   },
   {
-    title: "Developers",
+    title: "developers",
     icon: Icons.dev,
     details: "Description for notification 2",
     buttonLabel: "View Details",
     onClick: () => handleNotificationClick(),
   },
   {
-    title: "Just Curious",
+    title: "justcurious",
     icon: Icons.justcurious, // Assuming you have different BellIcons for each item
     details: "Description for notification 1",
     buttonLabel: "View Details",
     onClick: () => handleNotificationClick(),
   },
   {
-    title: "FAQ",
+    title: "faq",
     icon: Icons.faq, //
     details: "Description for notification 2",
     buttonLabel: "View Details",
@@ -59,12 +59,13 @@ export default function Home() {
         <div className="grid grid-cols-2 md:w-2/3 min-h-screen flex-1">
       {notificationData.map((item, index) => (
         <GridItem
-          key={index}
-          title={item.title}
-          details={item.details}
-          buttonLabel={item.buttonLabel}
-          onClick={item.onClick}
-          className="mt-8"
+        key={index}
+            title={item.title}
+            details={item.details}
+            buttonLabel={item.buttonLabel}
+            icon={Icons[item.iconName]}
+            iconName={item.iconName}
+            className="mt-8"
         />
       ))}
     </div>
